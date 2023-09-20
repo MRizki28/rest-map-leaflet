@@ -29,6 +29,7 @@ class RukoController extends Controller
 
         if ($validation->fails()) {
             return response([
+                'message' => 'check your validation',
                 'errors' => $validation->errors()
             ]);
         }
